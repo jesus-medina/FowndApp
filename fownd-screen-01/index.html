@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fownd Screen</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body onload="onLoad()">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="bower_components/firebase/firebase-app.js"></script>
+    <script src="bower_components/firebase/firebase-storage.js"></script>
+    <script src="bower_components/firebase/firebase-firestore.js"></script>
+
+    <!-- Initialize Firebase -->
+    <script src="js/init.js"></script>
+
+    <!-- <div class="fullscreen-bg">
+      <video width="320" height="240" loop autoplay class="fullscreen-bg__video">
+        <source src="background-videos/humo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div> -->
+    <div id="targetDiv"></div>
+    <!-- <div id="songLabel"></div> -->
+
+    <form class="box" method="post" action="" enctype="multipart/form-data">
+      <div class="box__input">
+        <input class="box__file" type="file" name="files[]" id="file" data-multiple-caption="{count} files selected" multiple />
+        <label for="file"><strong>Choose a file</strong><span class="box__dragndrop"> or drag it here</span>.</label>
+        <button class="box__button" type="submit">Upload</button>
+      </div>
+      <div class="box__uploading">Uploading…</div>
+      <div class="box__success">Done!</div>
+      <div class="box__error">Error! <span></span>.</div>
+    </form>
+
+    <script src="bower_components/showdown/dist/showdown.js"></script>
+    <script src="js/update-markdown.js"></script>
+    <!-- <script src="js/update-label.js"></script> -->
+    <script src="js/firestore-setup.js"></script>
+    <!-- <script src="js/storage-setup.js"></script> -->
+  </body>
+</html>

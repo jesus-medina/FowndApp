@@ -1,0 +1,21 @@
+{
+  "name": "fownd-screen",
+  "authors": [
+    "Jesus Daniel Medina Cruz <jesus.daniel.medina.cruz@gmail.com>"
+  ],
+  "description": "A fownd app that show the actual notes for the worship team members",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "showdown": "^1.9.1",
+    "firebase": "^7.16.0"
+  }
+}
