@@ -9,5 +9,9 @@ ${markdownText}
 ---
 `);
 
-  targetDiv.innerHTML = html;
+  targetDiv.innerHTML = `
+<pre>
+${markdownText}
+</pre>
+`;
 }

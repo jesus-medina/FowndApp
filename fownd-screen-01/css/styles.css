@@ -69,7 +69,7 @@ table {
   padding: 4%;
   width: 100%;
   color: #ffffff;
-  background-color: #2B2B2B;
+  /* background-color: #2B2B2B; */
 
   transition: ease-in-out width 0.28s;
 
@@ -79,10 +79,16 @@ table {
   text-align: center;
 }
 
-pre {
+#targetDiv pre {
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 98%;
   padding: 1%;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 /* Ripple effect */
